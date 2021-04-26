@@ -1,0 +1,61 @@
+@import "variables", "setup";
+
+
+.dj-fayah-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.header-banner {
+  display: block;
+  width: 100%;
+  margin-bottom: 500px;
+}
+
+.event {
+  margin: 2rem 0;
+  padding: .5rem;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgba(0,0,0, .7);
+  box-shadow: 5px 5px 10px rgba(20,0,0, .7), -5px -5px 10px rgba(20,0,0, .7);
+
+  &__info {
+    h2 {
+      margin-bottom: 3rem;
+    }
+
+    h5 {
+      margin: 1rem 0;
+      background-color: $black;
+    }
+
+    figure {
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        display: block;
+        width: 75%;
+      }
+    }
+  }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
