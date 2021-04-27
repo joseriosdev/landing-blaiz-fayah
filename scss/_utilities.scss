@@ -1,0 +1,11 @@
+.text-muted {
+  color: gray !important;
+  text-decoration: line-through !important;
+}
+
+.current-stage {
+  padding: .5rem;
+  font-size: 1.2rem;
+  background-color: $soft-red;
+  border-left: solid 3px $red;
+}
