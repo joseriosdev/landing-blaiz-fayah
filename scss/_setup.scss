@@ -7,6 +7,7 @@
 body {
   position: relative;
   font-family: $font-stack;
+  letter-spacing: .2rem;
   background-color:  $light-color;
   color: $black;
 
@@ -23,15 +24,6 @@ body {
   }
 }
 
-
-/*
-img {
-  display: inherit;
-  width: inherit;
-}*/
-
-.container {
-  max-width: $max-width;
-  min-width: $min-width;
-  margin: 0 auto;
+ul {
+  list-style: none;
 }
