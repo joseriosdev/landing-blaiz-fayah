@@ -95,13 +95,12 @@
     }
 
     h1 {
-      margin-bottom: 3rem;
+      margin-bottom: 3.5rem;
       width: 1%;
     }
 
     h4 {
-      margin: 1rem 0;
-      background-color: $transparent-black;
+      margin: 2rem 0;
     }
 
     figure {
@@ -111,7 +110,8 @@
       flex-direction: column;
       img {
         display: block;
-        width: 75%;
+        margin-top: 1rem;
+        width: 50%;
       }
     }
   }
@@ -162,11 +162,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  width: 50%;
   margin-bottom: 2rem;
+  box-shadow: 5px 5px 10px rgba(20,0,0, .7), -5px -5px 10px rgba(20,0,0, .7);
+  animation: nequi 2s infinite linear;
 
   h2 {
     padding: .3rem .2rem;
-    width: 75%;
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
     background-color: $red;
@@ -175,7 +179,7 @@
 
   &-nequi {
     display: block;
-    width: 75%;
+    width: 100%;
     padding: .5rem;
     background-color: $black;
     img {
@@ -185,8 +189,4 @@
   }
 }
 
-.flyer {
-  background-color: $white;
-}
-
-@import "media";
+@import "animation","media";

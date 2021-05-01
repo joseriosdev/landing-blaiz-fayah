@@ -24,6 +24,19 @@ body {
   }
 }
 
+h1, h2, h3, h4, h5, h6, p, strong, em {
+  font-family: $font-stack;
+}
+
 ul {
   list-style: none;
+}
+
+hr {
+  margin: 1rem auto;
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: url(../assets/img/MANCHA-DANCEHALL.png) no-repeat center center/contain;
 }

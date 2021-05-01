@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "phosphate";
-  src: url(../assets/fonts/Phosphate-Solid-bold.otf) format("opentype");
+  src: url(../assets/fonts/Phosphate-Solid-Bold.otf) format("opentype");
   font-style: bold;
   font-weight: 700; }
 
@@ -44,8 +44,19 @@ body {
     opacity: .3;
     z-index: -2; }
 
+h1, h2, h3, h4, h5, h6, p, strong, em {
+  font-family: "phosphate", sans-serif; }
+
 ul {
   list-style: none; }
+
+hr {
+  margin: 1rem auto;
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: url(../assets/img/MANCHA-DANCEHALL.png) no-repeat center center/contain; }
 
 .text-muted {
   color: gray !important;
@@ -136,11 +147,10 @@ ul {
       transform: translateX(-50%);
       background-color: whitesmoke; }
     .event__info h1 {
-      margin-bottom: 3rem;
+      margin-bottom: 3.5rem;
       width: 1%; }
     .event__info h4 {
-      margin: 1rem 0;
-      background-color: rgba(0, 0, 0, 0.7); }
+      margin: 2rem 0; }
     .event__info figure {
       display: flex;
       justify-content: center;
@@ -148,7 +158,8 @@ ul {
       flex-direction: column; }
       .event__info figure img {
         display: block;
-        width: 75%; }
+        margin-top: 1rem;
+        width: 50%; }
 
 .video-container {
   position: relative;
@@ -187,25 +198,34 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem; }
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 10px rgba(20, 0, 0, 0.7), -5px -5px 10px rgba(20, 0, 0, 0.7);
+  animation: nequi 2s infinite linear; }
   .payment h2 {
     padding: .3rem .2rem;
-    width: 75%;
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
     background-color: #fe0b03;
     color: whitesmoke; }
   .payment-nequi {
     display: block;
-    width: 75%;
+    width: 100%;
     padding: .5rem;
     background-color: #101010; }
     .payment-nequi img {
       display: inherit;
       width: inherit; }
 
-.flyer {
-  background-color: whitesmoke; }
+@keyframes nequi {
+  0% {
+    box-shadow: 5px 5px 10px rgba(20, 0, 0, 0.7), -5px -5px 10px rgba(20, 0, 0, 0.7); }
+  50% {
+    box-shadow: 12px 12px 25px rgba(60, 0, 0, 0.7), -12px -12px 25px rgba(60, 0, 0, 0.7); }
+  100% {
+    box-shadow: 5px 5px 10px rgba(20, 0, 0, 0.7), -5px -5px 10px rgba(20, 0, 0, 0.7); } }
 
 @media (min-width: 500px) {
   .dj-fayah-bg {
